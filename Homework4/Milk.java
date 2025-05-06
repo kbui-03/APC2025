@@ -3,7 +3,7 @@ package Homework4;
 public class Milk extends PopularGrocery {
 
     public Milk(int quantity, int discountThreshold, int popularityLevel){
-        super(popularityLevel, true);
+        super(popularityLevel);
         this.quantity = quantity;
         this.discountThreshold = discountThreshold;
         this.householdLimit = 20;
@@ -11,10 +11,6 @@ public class Milk extends PopularGrocery {
     
     @Override
     public int getBulkDiscount() {
-        if (quantity >= discountThreshold) {
-            return 12; 
-        } else {
-            return 0; 
-        }
+        return (quantity >= discountThreshold) ? 12 : 0;
     }
 }
