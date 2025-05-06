@@ -1,4 +1,4 @@
-package PresentTasks;
+package PresentTasks.Week3;
 import java.util.List;
 
 public class Configuration {
