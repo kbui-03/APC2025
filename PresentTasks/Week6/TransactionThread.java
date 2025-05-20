@@ -25,7 +25,7 @@ public class TransactionThread implements Runnable {
         for (int i = 0; i < 1000; i++) {
             // System.out.println("Thread " + i + " started");
             Thread t1 = new Thread(new TransactionThread(account, 10, true));
-            Thread t2 = new Thread(new TransactionThread(account, -10, false));
+            Thread t2 = new Thread(new TransactionThread(account, 10, false));
 
             t1.start();
             t2.start();
