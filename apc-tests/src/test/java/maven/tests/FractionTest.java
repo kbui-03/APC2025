@@ -2,8 +2,6 @@ package maven.tests;
 
 import org.junit.jupiter.api.Test;
 
-import maven.tests.Fraction;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FractionTest {
@@ -28,8 +26,8 @@ public class FractionTest {
         Fraction f2 = new Fraction(3, 4);
         f1.multiplikation(f2);
         // The method is currently incorrect in your implementation, but here's the expected test:
-        // assertEquals(6, f1.getZaehler());
-        // assertEquals(12, f1.getNenner());
+        assertEquals(6, f1.getZaehler());
+        assertEquals(12, f1.getNenner());
     }
 
     @Test
@@ -38,8 +36,8 @@ public class FractionTest {
         Fraction f2 = new Fraction(1, 2);
         f1.addition(f2);
         // The method is currently incorrect in your implementation, but here's the expected test:
-        // assertEquals(2, f1.getZaehler());
-        // assertEquals(2, f1.getNenner());
+        assertEquals(2, f1.getZaehler());
+        assertEquals(2, f1.getNenner());
     }
 
     @Test
@@ -47,7 +45,7 @@ public class FractionTest {
         Fraction f = new Fraction(2, 4);
         f.kuerzen();
         // The method is currently incorrect in your implementation, but here's the expected test:
-        // assertEquals(1, f.getZaehler());
-        // assertEquals(2, f.getNenner());
+        assertEquals(1, f.getZaehler());
+        assertEquals(2, f.getNenner());
     }
 }
